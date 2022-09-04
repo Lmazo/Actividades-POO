@@ -1,3 +1,75 @@
+//CAPITULO 3: ESTRUCTURA SECUENCIAL
+import java.util.Scanner;
+public class ejercicio18
+{
+	public static void main(String[] args) {
+	    
+	    int codigoEmp, horasMes, valorHoras, retencionFuente;
+	    String nombres;
+	    
+	    nombres="Pepito Perez";
+	    codigoEmp = 12345;
+	    horasMes = 190;
+	    valorHoras = 5000;
+	    
+	    System.out.println("Codigo trabajador: " + codigoEmp);
+	    System.out.println("Nombres: " + nombres);
+	    
+	    int salarioBruto, salarioNeto;
+	    
+	    salarioBruto = valorHoras * horasMes;
+	    retencionFuente = salarioBruto/12;
+	    salarioNeto = salarioBruto - retencionFuente;
+	    
+	    System.out.println("Salario bruto: " + salarioBruto);
+	    System.out.println("Salario Neto: " + salarioNeto);
+		
+		
+	}
+}
+
+import java.util.Scanner;
+public class ejercicio19
+{
+	public static void main(String[] args) {
+	    
+	    double lado, p, h, a;
+	    
+	    lado = 5;
+	    p = lado*3;
+	    h = (Math.sqrt(3)*lado)/2;
+	    a =  (lado*h)/2;
+	    
+	    System.out.println("El perimetro del triangulo es: " + p);
+	    System.out.println("La altura del triangulo es: " + h);
+	    System.out.println("El area del triangulo es: " + a);
+	}
+}
+
+import java.util.Scanner;
+public class ejercicio21
+{
+	public static void main(String[] args) {
+	    
+	    int ladoA, ladoB, ladoC, p, sp;
+	    double a;
+	    ladoA = 3;
+	    ladoB = 4;
+	    ladoC = 5;
+	    
+	    p = ladoA +ladoB + ladoC;
+	    sp = (ladoA + ladoB + ladoC)/2;
+	    a = Math.sqrt((sp*(sp-ladoA))*(sp-ladoB)*(sp-ladoC));
+	    
+	    System.out.println("El Perimetro del triangulo es: " + p);
+	    System.out.println("La semiperímetro del triángulo es: " + sp);
+	    System.out.println("El area del triangulo es: " + a);
+
+	}
+}
+
+
+
 //CAPITULO 4: ESTRUCTURA DECISIÓN LÓGICA 
 
 import java.util.Scanner;
