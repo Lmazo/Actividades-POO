@@ -1,75 +1,3 @@
-//CAPITULO 3: ESTRUCTURA SECUENCIAL
-import java.util.Scanner;
-public class ejercicio18
-{
-	public static void main(String[] args) {
-	    
-	    int codigoEmp, horasMes, valorHoras, retencionFuente;
-	    String nombres;
-	    
-	    nombres="Pepito Perez";
-	    codigoEmp = 12345;
-	    horasMes = 190;
-	    valorHoras = 5000;
-	    
-	    System.out.println("Codigo trabajador: " + codigoEmp);
-	    System.out.println("Nombres: " + nombres);
-	    
-	    int salarioBruto, salarioNeto;
-	    
-	    salarioBruto = valorHoras * horasMes;
-	    retencionFuente = salarioBruto/12;
-	    salarioNeto = salarioBruto - retencionFuente;
-	    
-	    System.out.println("Salario bruto: " + salarioBruto);
-	    System.out.println("Salario Neto: " + salarioNeto);
-		
-		
-	}
-}
-
-import java.util.Scanner;
-public class ejercicio19
-{
-	public static void main(String[] args) {
-	    
-	    double lado, p, h, a;
-	    
-	    lado = 5;
-	    p = lado*3;
-	    h = (Math.sqrt(3)*lado)/2;
-	    a =  (lado*h)/2;
-	    
-	    System.out.println("El perimetro del triangulo es: " + p);
-	    System.out.println("La altura del triangulo es: " + h);
-	    System.out.println("El area del triangulo es: " + a);
-	}
-}
-
-import java.util.Scanner;
-public class ejercicio21
-{
-	public static void main(String[] args) {
-	    
-	    int ladoA, ladoB, ladoC, p, sp;
-	    double a;
-	    ladoA = 3;
-	    ladoB = 4;
-	    ladoC = 5;
-	    
-	    p = ladoA +ladoB + ladoC;
-	    sp = (ladoA + ladoB + ladoC)/2;
-	    a = Math.sqrt((sp*(sp-ladoA))*(sp-ladoB)*(sp-ladoC));
-	    
-	    System.out.println("El Perimetro del triangulo es: " + p);
-	    System.out.println("La semiperímetro del triángulo es: " + sp);
-	    System.out.println("El area del triangulo es: " + a);
-
-	}
-}
-
-
-
 //CAPITULO 4: ESTRUCTURA DECISIÓN LÓGICA 
 
 import java.util.Scanner;
@@ -136,6 +64,32 @@ class ejercicio11EDL {
 }
 
 
+import java.util.Scanner;
+class ejercicio12EDL {
+  public static void main(String [] args){
+    Scanner entrada = new Scanner(System.in);
+    String n;
+    double nht, vht, het, hett, s;
+    System.out.println("Ingrese su nombre: ");
+    n=entrada.nextLine();
+    System.out.println("ingrese el numero de horas trabajadas: ");
+    nht=entrada.nextDouble();
+    System.out.println("ingrese el valor por hora  de trabajo: ");
+    vht=entrada.nextDouble();
+    if (nht>40){
+      het=nht-40;
+      if (het>8){
+        hett=het-8;
+        s=40*vht+16*vht+vhtt*3*vht;
+      } else {
+          s=40*vht+het*2*vht;
+        } 
+     }else {
+        s=nht*vht;
+    }
+    System.out.println("el trabajador " + n + " devengo: $" + s);
+}
+}
     
   
 
