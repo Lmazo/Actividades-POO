@@ -95,7 +95,7 @@ import java.util.Scanner;
 
 
 //Capitulo 4 : ejercicios propuestos
-public class ejercicio23_4
+public class ejercicio22_4
 {
 	public static void main(String[] args) {
 
