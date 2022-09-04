@@ -91,7 +91,40 @@ class ejercicio12EDL {
 }
 }
     
-  
+import java.util.Scanner;
+
+
+//Capitulo 4 : ejercicios propuestos
+public class ejercicio23_4
+{
+	public static void main(String[] args) {
+
+	    
+	    Scanner entrada = new Scanner(System.in);
+	    String nombreEmp;
+	    int salarioxHora, horasMes, salarioMes
+	    ;
+	    System.out.println("Ingrese nombre del empleado: ");
+	    nombreEmp = entrada.nextLine();
+	    
+	    System.out.println("Ingrese salario basico por hora: ");
+	    salarioxHora = entrada.nextInt();
+	    
+	    System.out.println("Ingrese numero de horas trabajadas en el mes: ");
+	    horasMes = entrada.nextInt();
+	    
+	    salarioMes = salarioxHora*horasMes;
+	    
+	    if (salarioMes>450000){
+	        System.out.println("El salario es mayor a 450000");
+	        System.out.println(nombreEmp+ "\n" + salarioMes);
+	    }
+	    else{
+	        System.out.println("El salario es menor a 450000");
+	        System.out.println(nombreEmp);
+	    }
+	}
+}  
 
 
 
