@@ -90,41 +90,39 @@ class ejercicio12EDL {
     System.out.println("el trabajador " + n + " devengo: $" + s);
 }
 }
-    
+
+
 import java.util.Scanner;
-
-
-//Capitulo 4 : ejercicios propuestos
-public class ejercicio22_4
-{
-	public static void main(String[] args) {
-
-	    
-	    Scanner entrada = new Scanner(System.in);
-	    String nombreEmp;
-	    int salarioxHora, horasMes, salarioMes
-	    ;
-	    System.out.println("Ingrese nombre del empleado: ");
-	    nombreEmp = entrada.nextLine();
-	    
-	    System.out.println("Ingrese salario basico por hora: ");
-	    salarioxHora = entrada.nextInt();
-	    
-	    System.out.println("Ingrese numero de horas trabajadas en el mes: ");
-	    horasMes = entrada.nextInt();
-	    
-	    salarioMes = salarioxHora*horasMes;
-	    
-	    if (salarioMes>450000){
-	        System.out.println("El salario es mayor a 450000");
-	        System.out.println(nombreEmp+ "\n" + salarioMes);
-	    }
-	    else{
-	        System.out.println("El salario es menor a 450000");
-	        System.out.println(nombreEmp);
-	    }
-	}
-}  
+class ejercicio13EDL {
+  public static void main(String [] args){
+    Scanner entrada = new Scanner(System.in);
+    double vC, vP, pD;
+    String c;
+    System.out.println("ingrese el color de la bolita: ");
+    c=entrada.nextLine();
+    vC=543450;
+    if ("blanco".equals(c)){
+       pD=0;
+    }else{
+       if ("verde".equals(c)){
+          pD=10;
+       }else{ 
+          if ("amarillo".equals(c)){
+             pD=25;
+          }else{
+             if ("azul".equals(c)){
+                pD=50;
+             }else{
+                pD=100;
+             }
+}
+}
+}
+vP=((pD*vC)/100);
+System.out.println("el cliente debe pagar: $"+ vP);
+}
+}
+  
 
 
 
