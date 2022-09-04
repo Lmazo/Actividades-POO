@@ -1,3 +1,5 @@
+//CAPITULO 4: ESTRUCTURA DECISIÓN LÓGICA 
+
 import java.util.Scanner;
 class ejercicio7EDL {
   public static viod main(String[] args){
@@ -37,6 +39,31 @@ class ejercicio10EDL {
     System.out.println("el estudiante con numero de inscripcion " + nI + " y nombre " + n + " debepagar: $" + pagoM);
   }
 }
+
+
+import java.util.Scanner;
+class ejercicio11EDL {
+  public static void main(String [] args){
+    Scanner entrada = new Scanner(System.in);
+    int a, b, c;
+    System.out.println("ingrese el primer numero: ");
+    a=entrada.nextInt();
+    System.out.println("ingrese el segundo numero: ");
+    b=entrada.nextInt();
+    System.out.println("ingrese el tercer numero: ");
+    c=entrada.nextInt();
+    if (a>b &  a>c) {
+      System.out.println("el mayor es: " + a);
+    } 
+    if (b>a & b>c) {
+      System.out.println("el mayor es: " + b);
+    } Else {
+        System.out.println("el mayor es: " + c);
+      }
+  }
+}
+
+
     
   
 
