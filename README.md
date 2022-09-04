@@ -1,8 +1,4 @@
-# Actividades-POO
-
-
-
-Import.java.util.Scanner;
+Import java.util.Scanner;
 class ejercicio7EDL {
   public static viod main(String[] args){
     Scanner entrada = new Scanner(System.in);
@@ -18,3 +14,7 @@ class ejercicio7EDL {
     }
   }
 }
+
+
+
+
